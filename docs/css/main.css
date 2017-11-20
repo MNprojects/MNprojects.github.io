@@ -2,26 +2,58 @@
 .navbar {
   overflow: hidden;
   background-color: #333;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 105%; /* Full width */
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
   margin: 0px;
   padding: 0;
-  border: 1px yellow;
-}
-
-/* Links inside the navbar */
-.navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 25px 45px;
-  text-decoration: none;
+  border: 0px yellow;
+  font-family: Arial, Helvetica, sans-serif;
+  white-space: nowrap;
+  z-index: 999;
   
 }
 
-/* Main content */
-.main {
-  margin-top: 30px; /* Add a top margin to avoid content overlay */
+/* Links inside the bar */
+.navbar a {
+  
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 25px 25px;
+  text-decoration: none;
+  
+  
 }
+/* Text inside the bar */
+.navbar div {
+  
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 25px 25px;
+  text-decoration: none;
+  border-right: 3px solid rgb(255, 255, 255);
+  
+  
+}
+
+
+body {
+  margin:0;
+  margin-top: 100px;
+  background-color: #ffffee
+}
+
+.content {
+background-color: white;
+overflow-wrap: break-word;
+border: 3px solid rgb(0, 0, 0);
+padding: 20px;
+position: relative;
+max-width: 1500px;
+min-width: 1500px;
+left: 100px;
+
+}
+
