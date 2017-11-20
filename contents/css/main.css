@@ -1,0 +1,40 @@
+body {
+    font: 1em/150% Helvetica, Arial, sans-serif;
+    padding: 1em;
+    margin: 0 auto;
+    max-width: 43em;
+  }
+
+  @media (min-width: 70em) {
+    body {
+      font-size: 130%;
+    }
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+  #header {
+    hz  : 10 ;
+  }
+  
+  div p, #id:first-line {
+    background-color: red;
+    background-style: none;
+    font-size: 180%;
+  }
+  .first {
+      font-weight: bold;
+  }
+  
+  div p {
+    margin: 0;
+    padding: 1em;
+  }
+  
+  div {
+    color: rgb(0, 36, 114);
+  }
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 5px;  
