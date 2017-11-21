@@ -17,24 +17,23 @@
 .navbar a {
   
   display: inline-block;
-  color: #f2f2f2;
+  color: #ffffff;
   text-align: center;
   padding: 25px 25px;
   text-decoration: none;
   border-right: 2px solid white;
-  
-  
-  
 }
+
 a:hover {
   text-decoration: underline;
-
 }
+
+
 /* Text inside the bar */
 .navbar div {
   
   display: inline-block;
-  color: #f2f2f2;
+  color: #ffffff;
   text-align: center;
   padding: 25px 25px;
   text-decoration: none;
@@ -61,10 +60,13 @@ body {
     max-width: 1051px;
 }
 
-.button {
-  color: white;
-  background-color: #4CAF50;
-  padding: 15px 15px;
-  max-width: 120px;
-
+.content a {
+  
+  display: inline-block;
+  background-color: #666666;
+  color: #ffffff;
+  text-align: center;
+  padding: 25px 25px;
+  text-decoration: none;
+  border-right: 2px solid white;
 }
