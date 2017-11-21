@@ -1,7 +1,7 @@
 /* The navigation bar */
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: rgb(110, 110, 110);
   position: fixed; 
   top: 0; 
   width: 100%; 
@@ -22,8 +22,14 @@
   text-align: center;
   padding: 25px 25px;
   text-decoration: none;
+  border-right: 2px solid white;
   
   
+  
+}
+a:hover {
+  text-decoration: underline;
+
 }
 /* Text inside the bar */
 .navbar div {
@@ -45,15 +51,13 @@ body {
   background-color: #ffffee
 }
 
+
+
 .content {
-background-color: white;
-overflow-wrap: break-word;
-border: 3px solid rgb(0, 0, 0);
-padding: 20px;
-position: relative;
-max-width: 1500px;
-min-width: 1500px;
-left: 100px;
-
+    background-color: white;
+    overflow-wrap: break-word;
+    border-top: 3px solid rgba(0, 0, 0, 0.493);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1051px;
 }
-

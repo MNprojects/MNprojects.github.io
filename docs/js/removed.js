@@ -1,3 +1,6 @@
+//To be put in the HTML docs to call the JS file
+<div><script src="docs/js/js.js"></script></div>
+
 // For creating a list on clicks
 
 var list = document.createElement('ul');
