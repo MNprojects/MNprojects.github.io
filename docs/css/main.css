@@ -70,3 +70,8 @@ body {
   text-decoration: none;
   border-right: 2px solid white;
 }
+
+.contentInline {
+  display: inline-flex;
+  al
+}
