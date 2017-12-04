@@ -1,83 +1,120 @@
-<!DOCTYPE html>
-<html>
+<html class="fa-events-icons-ready">
     <head>
-        <meta charset="utf-8">
-        <meta name="author" content="Michael Nash">
-        <meta name="description" content="A personal portfolio site used to showcase software engineering skills.">
-        <title>Michael Nash Personal Website</title>
-        <!-- sets the icon for used for the page -->
-        <link rel="icon" type="image/gif" href="docs/img/bulb2.png" />
+    <title>Michael Nash Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Lato|Open+Sans|Roboto" rel="stylesheet">
+    <script src="https://use.fontawesome.com/c6dd220eb6.js"></script><link href="https://use.fontawesome.com/c6dd220eb6.css" media="all" rel="stylesheet">
+    <style type="text/css">html{font-size:100%}body{font-family:Open Sans,sans-serif;position:relative}@media (min-width:768px){body{font-size:110%}}@media (min-width:1024px){body{font-size:115%}}@media (min-width:1600px){body{font-size:130%}}.navbar{margin:0}#home{background-color:#fff;display:flex;flex-direction:column-reverse}@media (min-width:768px){#home{flex-direction:row}}#home .home-text{flex:1 1 70vh;position:relative}#home .home-text .text-heading{position:absolute;left:2%;bottom:2%;width:85%}@media (min-width:768px){#home .home-text .text-heading{top:45%}}#home .home-text .text-heading h1{font-size:3em;font-weight:900;font-family:Lato,sans-serif}#home #image-container img{flex:0 1 auto}@media (min-width:768px){#home #image-container img{max-height:100vh}}#about{background-color:#eee;padding:2.5% 7.5%}@media (min-width:600px){#about{padding:5% 7.5%}}@media (min-width:768px){#about{padding:5% 12.5%}}@media (min-width:1024px){#about{padding:5% 15%}}@media (min-width:1600px){#about{padding:5% 25%}}#about h1{text-align:center}#about p{font-size:1em;text-align:justify}#about .about-panel,#about .about-panel-inverse{display:flex;align-items:center;margin-bottom:1.5em}#about .about-panel-inverse{flex-direction:row-reverse}#about .about-panel-end{display:flex;align-items:center;justify-content:space-around;flex-direction:column-reverse}#about img{height:5em;width:5em;border:4px solid #505050;margin:.5em 2em}#work{background-color:#fff;padding:2.5% 7.5%}@media (min-width:768px){#work{padding:5% 7.5%}}#work h1{text-align:center}#work p{font-size:.9em}#portfolio{display:flex;flex-wrap:wrap;flex-direction:column;justify-content:space-around}@media (min-width:768px){#portfolio{flex-direction:row}}#portfolio .thumbnail{margin:1% 0}@media (min-width:768px){#portfolio .thumbnail{flex:0 1 45%}}@media (min-width:1024px){#portfolio .thumbnail{flex:0 1 27%}}@media (min-width:1600px){#portfolio .thumbnail{flex:0 1 20%}}#portfolio .thumbnail:hover{border:2px solid #428bca}#portfolio .thumbnail .caption .github-icon,#portfolio .thumbnail .caption h3{text-align:center}#contact{background-color:#eee;padding:2.5% 12.5%}@media (min-width:768px){#contact{padding:5% 17.5%}}@media (min-width:1024px){#contact{padding:5% 20%}}@media (min-width:1600px){#contact{padding:5% 30%}}#contact h1{text-align:center}#contact p{font-size:.9em}#contact form label{font-size:.7em}#contact form button{margin:.5em auto 1em}#contact form .help-block{font-size:.6em}footer{background-color:#222;padding:.5em;display:flex;justify-content:center}footer i{font-size:2em;margin:0 5px;color:#fff}footer i:hover{color:#e6e6e6}</style>
 
+</head>
+
+  <body id="page-top" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <div id="app">
+        <div data-reactroot="" class="app-container">
+            <nav class="navbar navbar-inverse navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-portfolio" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="#home" class="navbar-brand">Michael Nash</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbar-portfolio">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active">
+                                <a href="#about">About</a>
+                            </li>
+                            <li>
+                                <a href="#work">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div id="home">
+                <div id="image-container"><img class="img-responsive" src="docs/img/londonBackground.jpg"></div>
+                <div class="home-text"><div class="text-heading"><h1>Hi, my name is Michael Nash.</h1>
+                    <h3>This is a personal portfolio site, designed to showcase my work.</h3>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="about"><h1>About</h1><div class="about-panel">
+            <img src="docs/img/man2.png" alt="Man" class="img-responsive img-circle">
+            <p>I'm Michael. I'm a recent graduate focusing on software development, living and working in London.</p>
+                </div>
+            
+            <div class="about-panel-inverse"><img src="docs/img/monitor2.png" alt="Monitor" class="img-responsive img-circle">
+                <p>For the past 18 months, I've been working full-time in a tech consultant role. As the main contact for 15 clients, they would come to me for any of their technical needs. 
+                        I gave each of my clients the bespoke service they needed, whether that was looking after their servers, users, email accounts, archiving of data, budgeting
+                         and scheduling, or proactive maintenance.</p>
+            </div>
+            
+            <div class="about-panel"><img src="docs/img/book.png" alt="Book" alt="" class="img-responsive img-circle">
+                <p>While continuing to work, over the past 3 years, I have been studying BSc (Hons) Computing and IT with the Open University. I graduated this year with a 2:2, focusing on software engineering.</p>
+            </div>
+            
+            <div class="about-panel-inverse"><img src="docs/img/bulb.png" alt="Ideas" class="img-responsive img-circle">
+                <p>Right now, I'm looking for opportunities to get into software development. I'm particularly interested in back-end systems or game development.</p>
+                </div>
+            
+            <div class="about-panel"><img src="docs/img/hammer.png" alt="World" class="img-responsive img-circle">
+                <p>I find that programming is a creative outlet for me. I love building things and programming is another way of doing just that. One of my hobbies is woodworking and as I learn more
+                    about computing I'm looking to integrate it into my projects.
+                </p>
+            </div>
+
+            <div class="about-panel-inverse"><img src="docs/img/github.png" alt="Ideas" class="img-responsive img-circle">
+                <p>Below are some examples of projects that I have been working on, along with links to available source code such as on my GitHub profile.</p>
+                </div>
+        </div>
+
+
+        <div id="work"><h1>Portfolio</h1>
+            <div id="portfolio"><div class="thumbnail"><a href="https://github.com/MNprojects/IceShot" target="_blank"><img src="docs/img/iceShot.png" alt="Ice Shot"></a>
+                <div class="caption"><h3><strong>Game Prototype</strong></h3>
+                    <p>Created a small prototype of a game idea. I call the game Ice Shot, the player controls a single character being chased by angry pengiuns!</p>
+                    <div class="github-icon"><a href="https://github.com/MNprojects/IceShot" target="_blank"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a></div>
+                </div>
+            </div><div class="thumbnail"><a href="http://www.michaelnash.space/pong" target="_blank"><img src="docs/img/pong.png" alt="Pong"></a>
+                <div class="caption"><h3><strong>Pong!</strong></h3>
+                    <p>Using JavaScript, I recreated the classic video game, Pong.</p>
+                    <div class="github-icon"><a href="https://github.com/MNprojects/MNprojects.github.io" target="_blank"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a></div>
+                </div>
+            </div><div class="thumbnail"><a href="#work" target="_blank"><img src="docs/img/xcode.png" alt="iOS App"></a>
+                <div class="caption"><h3><strong>iOS Application</strong></h3>
+                    <p>An educational to help children learn to spell in English. Created using Swift3 and Xcode, it allowed the user to create custom lists of words to be tested.Made as a final year project for university, it was not released on the App Store.</p>
+                    
+                </div>
+            </div><div class="thumbnail"><a href="#work" target="_blank"><img src="docs/img/site.png" alt="websites"></a>
+                <div class="caption"><h3><strong>Web Design</strong></h3>
+                    <p>I've created this site and many more to test ideas and grow my skills as a developer. I have a site that runs on django that isn't hosted but is available on my GitHub</p>
+                    <div class="github-icon"><a href="https://github.com/MNprojects/locallibrary" target="_blank"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a></div>
+                </div>
+            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="contact"><h1>Contact</h1>
+        <p>The best way to contact me is by email. Feel free to use the link below and I'll get back to you.</p>
         
-        <link rel="stylesheet" href="docs/css/main.css">
-        <html lang="en-GB"></html>
-
-    
-    </head>
-
-<body>
-
-<div class="navbar">
-    <div>Michael Nash</div>
-  <a href="index.html">Home</a>
-  <a href="cv.html">Curriculum Vitae</a>
-  <a href="portfolio.html">Portfolio</a>
-  <a href="contact.html">Contact</a>
+    <div class="text-center"><a href="mailto:michaelnash.work@gmail.com?subject=I hear you like rubber ducks">Send me an email!</a></div>
+</form>
+</div>
 </div>
 
-
-<div class="content">
-
-    Hello! My name is Michael. I'm a recent graduate looking to dive into software development. 
-    I created this website as a place for me to show off different projects I have worked on and keep a record of my achievements. 
-    Please take a look around the Portfolio and CV pages for more information on what I have done or check out the Contact page for information on how best to contact me.
-    I also have a GitHub portfolio under the name MNprojects.<br/><br/>
-    Thanks!<br/><br/><br/>
-    <a target="_blank" href="https://github.com/MNprojects">Visit my GitHub!</a>
-    
-</div>
-
-<div class="content">
-    This is a website that I have built from scratch using HTML, CSS, and JavaScript. I have not used any templates or frameworks to assist me.
-</div>
-
-<div class="content">
-    <h1>Update List</h1>
-    When major changes are made to this site, I will keep a record of them here.<br/><br/>
-    Update - 25/11/17<br/>
-    <ul>
-        <li>Updated the Pong game page. Created a border around the game, implemented score card feature. Repositioned to centre of the page</li>
-        <li>Updated the Portfolio page to include more information on already listed projects. Added information on previously unlisted projects.</li>
-    </ul>
-    Update - 23/11/17<br/>
-    <ul>
-        <li>Created a new page for the current JavaScript app in-progress, Pong! Link can be found on the Portfolio page. Requires further updates.</li>
-    </ul>
-
-    
-</div>
-<!-- <ul><li></li></ul> -->
-        <!-- <li></li> -->
-<div class="content">
-    I will include some text below to demonstrate how I have implemented the navigation bar at the top. It should always be at the top of the page.
-    Another feature I have implemented is the main column of text in the middle of the page should adjust to be in the page at the expense of the margins, should you choose to reduce the size of your browser.
-    This site has not been optimised for mobile devices yet.
-</div>
-
-<div class="content">
-    Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a Willow tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.      
-</div>
-<div class="content">
-    Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.<br/>  <br/>
-    <img src="docs/img/londonBackground.jpg"><br/><br/>
-    Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.   Test content test content. The quick brown fox jumped over a smelly old goose that was sleeping under a tree.
-
-</div>
-
-<!--<div class="content">
-    
-</div> --> 
-
-
-</body>
-</html>
+<footer class="text-center"><a href="https://github.com/MNprojects/" target="_blank"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+    </footer></div></div>
+ 
+  </body></html>
